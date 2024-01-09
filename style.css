@@ -284,7 +284,13 @@ a:hover {
 #text2 {
   margin-top: 40px;
 }
-
+.tema2 {
+  background-color: transparent;
+  color: #11055f;
+  border: none;
+  font-family: "Vesper Libre", serif;
+  font-size: 20px;
+}
 #tema2 {
   background-color: transparent;
   color: #11055f;
