@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundläggande UX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
+    <!-- lägg till favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <!-- till toppen knapp -->
+    <button id="till_toppen" onclick="scrollToTop()" style="display:none">Till toppen</button>
+    <header class="header_p">
+        <nav>
+            <div id="logo"><a href="index.html">Portfolio</a></div>
+            <div class="dropdown">
+                <button class="dropbtn">Projekt</button>
+                <div class="dropdown-content">
+                    <a href="web.html">Grundläggende web</a>
+                    <a href="ux.html">Grundläggende UX</a>
+                    <a href="animation.html">Animation</a>
+                    <a href="indhold.html">Grundläggende indhold</a>
+                </div>
+            </div>
+            <div class="about"><a href="about.html">Om mig</a></div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 id="overskrift">Grundläggande UX</h1>
+        </section>
+        <section id="second_section">
+            <div>
+                <h2>Beskrivning av tema</h2>
+                <p>
+                    Grundläggande UX är ett tema som bygger på användarupplevelse. Vi skapade vår egna hemsida, med
+                    hjälp av metoder och verktyg vi lärde oss i tema 2. Temat innehöll i första hand tre olika delar,
+                    bland annat: Utveckling av mitt koncept genom research, min prototyp med produktinnehåll, samt test
+                    och pitch. I slutet av temat, efter att jag hade lämnat in, presenterade vi våran hemsida för
+                    varandra. Min hemsida blev en portfolio för min konst, då jag länge velat skapa en hemsida för detta
+                    syfte.
+                </p>
+
+                <p>
+                    Hemsidan och pitchen och hela processdokumentationen kan ses här :
+                    <button id="tema2"
+                        onclick="window.location.href='https://augusthasselblad.dk/kea/03_ux/01_kodet_site/';">
+                        Hemsida
+                    </button>
+                    <a href="bilder/030401_præsentation_augusthasselblad.pdf" id="tema2">, pitch</a>
+                    <a href="bilder/030402_UXUI_procesdokumentation_augusthasselblad.pdf" id="tema2">,
+                        processdokumentation</a>
+                </p>
+            </div>
+            <div>
+                <img src="bilder/ux.webp" alt="ux" />
+            </div>
+        </section>
+        <section id="third_section_p">
+            <div>
+                <h2>Uppgiften och dokumentation</h2>
+                <p>
+                    I början av temat lärde vi oss om olika research metoder; desk och observation-research. Jag
+                    påbörjade min forskning med desk-research, vilket betyder att jag forskade på andra konstnärers
+                    hemsidor. Jag fortsatte min forskning med observation-metoden. Min fysiska observation var på ett
+                    galleri, för att få insikt om hur människor agerar när de ser på konst. Med hjälp av dessa
+                    observationer lärde jag mig att jag behöver en tydlig header, som fungerar som ett galleris
+                    reception, och att ge nästan all övrig plats till min konst.
+                    Jag fortsatte även min forskning med att låta min flickvän navigera kring hemsidor som liknade min
+                    idé, för att få en uppfattning om vad som är viktigt att ta med.
+
+                </p>
+            </div>
+            <div id="bild1">
+                <img src="bilder/ux1.webp" alt="doku_web" />
+            </div>
+            <div id="text2">
+                <p>
+                    Jag kunde därmed börja utveckla min idé, med metoder som crazy 8s, för att sedan göra en tydligare
+                    “solution sketch”. Det första jag gjorde efter sketchen var en “style tile”, där jag fastsatte
+                    fonter, färger och ikoner. Efter detta kunde jag en wireframe för min hemsidas alla sidor, och sedan
+                    en prototyp som gick att testa, och som fungerade som ett facit av mitt kodande, med hjälp av en
+                    sitemap. Med hjälp av UI-konventioner skapade jag min prototyp, och sedan testades den av
+                    klasskamrater, med hjälp av 5 sekunders test. Detta gjordes för att få en tydlig uppfattning om vad
+                    som fungerade och vad som var oklart i min prototyp, för att sedan rätta detta inför min slutliga
+                    webbplats. Slutligen pitchade jag idén för en liten grupp av klasskamrater och lärare. Min pitch
+                    bestod av en powerpoint med endast bilder, och “storytelling” för att förklara processen av
+                    skapandet.
+                </p>
+            </div>
+            <div><img src="bilder/ux2.webp" alt="doku_web2" /></div>
+        </section>
+    </main>
+    <footer>
+        <img src="bilder/boxarefot.webp" alt="footer bild">
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

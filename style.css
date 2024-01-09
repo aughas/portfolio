@@ -1,0 +1,325 @@
+/* Generella regler */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+main section {
+  grid-column: 2/3;
+  padding: 10px;
+  margin-top: 20px;
+}
+body {
+  background-color: #f5f5f5;
+}
+
+/* first section */
+
+#first_section {
+  grid-column: 1/4;
+  width: 100%;
+  height: 105vh;
+  background-image: url(bilder/background2.webp);
+  background-size: cover;
+  background-position: 50%;
+}
+
+/* nav */
+.header_index {
+  position: sticky;
+  top: 0;
+}
+
+#logo {
+  padding: 5px;
+  align-items: center;
+  margin-inline-end: auto;
+}
+/* FIXA FÄRG */
+#logo a {
+  color: #3dbaf0;
+}
+#logo:hover a {
+  color: #11055f;
+}
+
+#om_mig {
+  padding: 5px;
+}
+
+.header_index nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  gap: 5px;
+  overflow-x: auto;
+}
+
+header a {
+  font-size: 40px;
+}
+
+/* STYLES */
+/* fixa font och färg */
+h1 {
+  font-family: "Vesper Libre", serif;
+  margin-bottom: 15px;
+  font-size: 4.1em;
+  color: #3dbaf0;
+}
+h2 {
+  font-family: "Neuton", serif;
+  font-size: 1.9rem;
+  color: #3dbaf0;
+}
+
+p {
+  font-family: "Habibi", serif;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  margin-right: 60px;
+  line-height: 1.5rem;
+}
+
+#overskrift {
+  font-family: "Vesper Libre", serif;
+  font-size: 3rem;
+}
+
+a {
+  font-family: "Vesper Libre", serif;
+  text-decoration: none;
+  color: #3dbaf0;
+  font-size: 1.3rem;
+}
+
+a:hover {
+  color: #092299;
+}
+
+/* nav knapp GÖR LÄTTARE ATT VÄLJA med padding: */
+.dropbtn {
+  background-color: transparent;
+  color: #3dbaf0;
+  border: none;
+  font-family: "Vesper Libre", serif;
+  font-size: 40px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  place-content: end end;
+  padding: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 80px;
+  background-color: #e0ce59d8;
+  opacity: 90%;
+}
+
+.dropdown-content a {
+  color: #11055f;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  font-family: "Vesper Libre", serif;
+}
+
+.dropdown-content a:hover {
+  background-color: #dc861b;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #092299;
+}
+
+/* second section */
+
+/* read more knapp LÄS PÅ */
+.read_more {
+  background-color: transparent;
+  border: none;
+  color: #11055f;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+.read_more span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.read_more span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.read_more:hover span {
+  padding-right: 25px;
+}
+
+.read_more:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* beskäring av bilder */
+
+@media (min-width: 1000px) {
+  #projekt {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center;
+  }
+  #second_section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-bottom: 70px;
+  }
+  #third_section img {
+    width: 280px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  #third_section_p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  #bildindhold {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  #portrat {
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top: 150px;
+  }
+  #second_section img {
+    width: 600px;
+    object-fit: cover;
+  }
+
+  #about_bild {
+    object-fit: cover;
+  }
+  #about_text {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+/* projekt sidor */
+
+/* nav */
+.about {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.header_p {
+  position: sticky;
+  top: 0;
+  background-color: #f3cf5e;
+}
+.header_p nav {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+
+#bild1 {
+  order: 3;
+}
+
+/* om mig */
+#intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column: 1/4;
+  width: 100%;
+  height: 100vh;
+  background-image: url(bilder/about_bg.webp);
+  background-size: cover;
+}
+
+#overskrifter {
+  margin: 50px;
+  margin-right: 60px;
+  margin-top: 170px;
+}
+
+/* styles */
+
+#text2 {
+  margin-top: 40px;
+}
+
+#tema2 {
+  background-color: transparent;
+  color: #11055f;
+  border: none;
+  font-family: "Vesper Libre", serif;
+  font-size: 20px;
+}
+
+#overskrift2 {
+  font-family: "Vesper Libre", serif;
+  margin-bottom: 15px;
+  font-size: 4.1em;
+  color: #3dbaf0;
+}
+
+#till_toppen {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 10px;
+  background-color: #3dbaf0;
+  color: #f3cf5e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#portrat {
+  margin-top: 200px;
+  margin-right: 20px;
+}
+
+footer img {
+  height: 150px;
+  width: 120px;
+  margin-left: 40px;
+}

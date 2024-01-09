@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundläggande animation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
+    <!-- lägg till favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+
+    <header class="header_p">
+        <nav>
+            <div id="logo"><a href="index.html">Portfolio</a></div>
+            <div class="dropdown">
+                <button class="dropbtn">Projekt</button>
+                <div class="dropdown-content">
+                    <a href="web.html">Grundläggende web</a>
+                    <a href="ux.html">Grundläggende UX</a>
+                    <a href="animation.html">Animation</a>
+                    <a href="indhold.html">Grundläggende indhold</a>
+                </div>
+            </div>
+            <div class="about"><a href="about.html">Om mig</a></div>
+        </nav>
+    </header>
+    <main>
+        <button id="till_toppen" onclick="scrollToTop()" style="display:none">Till toppen</button>
+        <section>
+            <h1 id="overskrift">Grundläggande Animation</h1>
+        </section>
+        <section id="second_section">
+            <div>
+                <h2>Beskrivning av tema</h2>
+                <p>
+                    Temat animation introducerade oss till många nya program, framförallt javascript och adobe
+                    illustrator, som var grunden av verktyg för att skapa vårt egna spel.Temat bestod generellt av två
+                    delar, designen av spelet och genomförandet av interaktiviteten med animationer. Här använde vi
+                    nyinlärda tekniker, diagram och animationer genom massa övningar, för att till slut sätta ihop vårt
+                    egna spel.
+
+                </p>
+                <p>
+                    Spela mitt spel här:
+                    <!-- RÄTTA LÄNK -->
+                    <button id="tema2"
+                        onclick="window.location.href='https://augusthasselblad.dk/kea/04_animation/website/spil.html';">
+                        Zombie Hunter
+                    </button>
+                </p>
+            </div>
+            <div>
+                <img src="bilder/spel.webp" alt="spel" />
+            </div>
+        </section>
+        <section id="third_section_p">
+            <div>
+                <h2>Uppgiften och dokumentation</h2>
+                <p>
+                    Temat Animation började med att vi skulle bestämma vad spelet skulle handla om och eftersom att det
+                    var halloween under tiden hade jag kollat på en del zombiefilmer, och valde då att spelet skulle gå
+                    ut på att döda zombies. Vi fick lära oss om olika stil utgångspunkter, exempelvis; “solid drawing”,
+                    asymmetri och baby bias. Jag valde att använda mig av baby bias och “flat-design”, för att jag ville
+                    att stilen på spelet skulle vara väldigt simpelt och tydligt. När speldesign-processen började
+                    gjorde jag även bakgrunds-designer, och valde här att använda mig av mindre saturerade färger för
+                    att få karaktärerna att “poppa”. Jag använde mig av bland annat atmosfäriskt perspektiv för designen
+                    av bakgrunden.
+
+                </p>
+            </div>
+            <div id="bild1">
+                <img src="bilder/ani2.webp" alt="animation1" />
+            </div>
+            <div id="text2">
+                <p>
+                    Med designen av spelet bestämt kunde jag nu börja implementera alla element och bilda det
+                    interaktiva. Alla illustrationer sparades som svg-filer så att jag kunde skapa mina egna
+                    animationer, och svg-filer har fortfarande vektorgrafik, vilket gör bilden kristallklar och inte
+                    pixelerad som en png-fil, men likt en png-fil inte har någon bakgrundsfärg. Här började vi med
+                    javascript som består av många olika delar. Det var bland annat här jag fick mina karaktärer att
+                    starta animationerna som jag hade skapat i CSS. Jag startade animationerna med “events”, liv och tid
+                    kodades som if/else-satser så att spelet kunde styra resultatet av sig självt. Det var också här jag
+                    la in mina ljudeffekter till spelet, efter att ha redigerat och komprimerat dem med hjälp av Adobe
+                    Audition.
+                </p>
+
+            </div>
+            <div><img src="bilder/ani1.webp" alt="animation2" /></div>
+        </section>
+    </main>
+    <footer>
+        <img src="bilder/boxarefot.webp" alt="footer bild">
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

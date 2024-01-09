@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundläggande innehåll</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
+    <!-- lägg till favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+
+    <header class="header_p">
+        <nav>
+            <div id="logo"><a href="index.html">Portfolio</a></div>
+            <div class="dropdown">
+                <button class="dropbtn">Projekt</button>
+                <div class="dropdown-content">
+                    <a href="web.html">Grundläggende web</a>
+                    <a href="ux.html">Grundläggende UX</a>
+                    <a href="animation.html">Animation</a>
+                    <a href="indhold.html">Grundläggende indhold</a>
+                </div>
+            </div>
+            <div class="about"><a href="about.html">Om mig</a></div>
+        </nav>
+    </header>
+    <main>
+        <button id="till_toppen" onclick="scrollToTop()" style="display:none">Till toppen</button>
+        <section>
+            <h1 id="overskrift">Grundläggande innehåll</h1>
+        </section>
+        <section id="second_section">
+            <div>
+                <h2>Beskrivning av tema</h2>
+                <p>
+                    Grundläggande innehåll var ett tema baserat på två projekt. Först introducerades vi till video- och
+                    foto-produktion, och olika program och verktyg för att redigera detta. Vi blev tilldelade en partner
+                    för att göra en egen intervju. Det andra projektet var också ett grupparbete baserat på att göra en
+                    “redesign” av ett företags/verksamhets webbplats. Denna arbetsprocess baseras på metoder vi hade
+                    lärt oss i tidigare teman, och övade vår förmåga att arbeta i grupp och ta fram varandras bästa
+                    sidor.
+                </p>
+
+                <p>
+                    Se den färdiga videosidan och vår "redesign" av en restaurangs webbplats här:
+                    <!-- RÄTTA LÄNK -->
+                    <button id="tema2"
+                        onclick="window.location.href='https://augusthasselblad.dk/kea/05_indhold/videosite/';">
+                        Videosite
+                    </button>
+                    <button id="tema2"
+                        onclick="window.location.href='https://augusthasselblad.dk/kea/05_indhold/Virksomhedssite05.02.02/index.html';">
+                        , redesign
+                    </button>
+                </p>
+            </div>
+            <div>
+                <img src="bilder/indhold.webp" alt="beskrivelse_web" />
+            </div>
+        </section>
+        <section id="third_section_p">
+            <div>
+                <h2>Uppgiften och dokumentation</h2>
+                <p>
+                    Det första jag lärde mig under kursen var mycket teori om videoproduktion, inklusive redigering och
+                    programmen att göra detta i. Jag fick även veta skillnaden på rå .wav-format och skillnaden på denna
+                    och mp4-filer. Jag lärde mig om termer som B-rolls, bildkomposition, som är viktiga att tänka på
+                    både under inspelning och redigering. Jag och min gruppmedlem intervjuade artisten Elvira Olea om
+                    hennes inspiration och process. För att redigera denna video använda jag Premier Pro, vilket är ett
+                    nytt program för mig. Andra delen av uppgiften 05.01.01 Videosite var att redigera foton som var
+                    tagna under inspelningsdagen. Jag fick även lära mig hur man hyr utrustning från KEAs Tech Lab, och
+                    hur man använder dessa med hjälp av diverse mjukvara till våra telefoner.
+                </p>
+            </div>
+            <div id="bild1">
+                <img src="bilder/indhold_mb.webp" alt="doku_web" />
+            </div>
+            <div id="text2">
+                <p>
+                    Efter videosite uppgiften påbörjade vi vår nästa gruppuppgift, och därmed introducerades till SCRUM,
+                    vilket var till stor hjälp i planeringen för hela vår grupp. En gruppmedlem kände någon som arbetade
+                    på verksamheten “Dragon Grill”, och de gav oss tillåtelse att ge deras hemsida en “redesign”, och
+                    även filma på plats. Min grupp började sedan skapa en grafisk profil för nya hemsidan, och det
+                    gjorde vi genom att alla gjorde varsin moodboard, och efter det samarbetade vi för att skapa en
+                    gemensam moodboard efter många kompromisser. Efter detta gjorde vi en wireframe och prototyp på
+                    FIGMA, och sedan började koda i html, css och java. Min del i arbetet var att ge menyn en ny design,
+                    då verksamhetens nuvarande meny var en förvirrande lång lista. Jag löste detta genom att
+                    kategorisera olika rätter i större huvudkategorier, och sedan skapade jag en javascript för att lätt
+                    scrolla mellan dessa olika kategorier. Jag skapade även den nya loggan vilket var grund till vår nya
+                    grafiska profil till Dragon Grill. Till sist presenterade vi uppgiften för klasskamrater i PECHA
+                    KUCHA stil, då vi alla pratade om våran del av arbetet.
+                </p>
+            </div>
+            <div><img src="bilder/indhold3.webp" alt="doku_web2" /></div>
+        </section>
+        <section id="bildindhold">
+            <div><img src="bilder/indhold_pro.webp" alt="doku_web2" /></div>
+        </section>
+    </main>
+    <footer>
+        <img src="bilder/boxarefot.webp" alt="footer bild">
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

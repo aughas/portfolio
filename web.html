@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundlæggende web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
+    <!-- lägg till favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <!-- till toppen knapp -->
+    <button id="till_toppen" onclick="scrollToTop()" style="display:none">Till toppen</button>
+    <header class="header_p">
+        <nav>
+            <div id="logo"><a href="index.html">Portfolio</a></div>
+            <div class="dropdown">
+                <button class="dropbtn">Projekt</button>
+                <div class="dropdown-content">
+                    <a href="web.html">Grundläggende web</a>
+                    <a href="ux.html">Grundläggende UX</a>
+                    <a href="animation.html">Animation</a>
+                    <a href="indhold.html">Grundläggende indhold</a>
+                </div>
+            </div>
+            <div class="about"><a href="about.html">Om mig</a></div>
+        </nav>
+    </header>
+    <main>
+
+        </section>
+        <section id="second_section">
+            <div>
+                <h2>Beskrivning av tema</h2>
+                <p>
+                    Grundläggande web är ett tema som innehöll grundläggande element och byggstenar för att skapa en
+                    hemsida. Under kursen introducerades jag för en hel del nya program som spelar stor roll i processen
+                    och skapandet av hemsidor.
+                </p>
+
+                <p>
+                    Jag fick även en massa verktyg och begrepp som är avgörande för att förstå och lära mig, eftersom
+                    att de är grunden till övriga teman vi har haft. I slutet av temat lämnade jag in uppgiften är
+                    resultaten av vad jag hade lärt mig under temat.
+                </p>
+                <p>
+                    Se det det slutliga resultatet här:
+                    <!-- RÄTTA LÄNK -->
+                    <button id="tema2"
+                        onclick="window.location.href='http://augusthasselblad.dk/kea/02_web/01_website/website/index.html';">
+                        Hemsida
+                    </button>
+                </p>
+            </div>
+            <div>
+                <img src="bilder/web.webp" alt="web" />
+            </div>
+        </section>
+        <section id="third_section_p">
+            <div>
+                <h2>Uppgiften och dokumentation</h2>
+                <p>
+                    Uppgiften, som var studiestart provet bestod av många olika delar, där vi kontinuerligt lärde oss
+                    metoder vi skulle använda för att skapa hemsidan. Första delen av uppgiften var att bygga den första
+                    versionen av våran hemsida, vilket bestod av en grundstruktur med undersidor och en navigationsmeny.
+                    Vi fick förklarat vad layout-diagram och wireframes var för något och följde sedan det till vår
+                    första version. (02.01.01). Vi lärde oss även där om designprinciper, och hur vi skulle använda oss
+                    av olika fonter och färger. Jag använde mig mycket av kontraster i mina färger, samt i fonterna.
+                </p>
+            </div>
+            <div id="bild1">
+                <img src="bilder/web1.webp" alt="doku_web" />
+            </div>
+            <div id="text2">
+                <p>
+                    En annan viktig del av uppgiften var att lära sig grunden i hur man bygger upp ett html-dokument och
+                    sedan ändrar stilen med css, med hjälp av massa övningar. Efter det kunde vi skapa en sida som var
+                    responsiv, till både datorer och mobiler. Vi fick även lära oss hur man komprimerar filer till olika
+                    format, exempelvis hur man gör en JPG till webP, vilket jag använde mig av i delen av uppgiften där
+                    man skulle lägga in en bild på sin egen dator.
+                </p>
+            </div>
+            <div><img src="bilder/web2.webp" alt="doku_web2" /></div>
+        </section>
+    </main>
+    <footer>
+        <img src="bilder/boxarefot.webp" alt="footer bild">
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

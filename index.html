@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
+    <!-- lägg till favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+</head>
+
+<body>
+    <main>
+        <!-- till toppen knapp -->
+        <button id="till_toppen" onclick="scrollToTop()" style="display:none">Till toppen</button>
+        <div id="first_section">
+            <header class="header_index">
+                <nav>
+                    <div id="logo"><a href="index.html">Portfolio</a></div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Projekt</button>
+                        <div class="dropdown-content">
+                            <a href="web.html">Grundläggende web</a>
+                            <a href="ux.html">Grundläggende UX</a>
+                            <a href="animation.html">Animation</a>
+                            <a href="indhold.html">Grundläggende indhold</a>
+                        </div>
+                    </div>
+                    <div id="om_mig"><a href="about.html">Om mig</a></div>
+                </nav>
+            </header>
+        </div>
+
+        <section id="second_section">
+            <div>
+                <h1>Om mig</h1>
+                <p>
+                    Hej och välkommen till min portfolio för KEA Multimediadesign termin 1. Jag är 24 år och har arbetat
+                    med grafisk design tidigare, men detta är första gången jag arbetar med web-development, och här är
+                    alla projekt vi har arbetat med de senaste månaderna samlade på samma ställe. Klicka nedan för att
+                    läsa mer om mig och mitt liv innan KEA
+                </p>
+                <button class="read_more" onclick="window.location.href='about.html'">
+                    <span><u> Read more</u></span>
+                </button>
+            </div>
+            <!-- lägg till bild på mig -->
+            <img src="bilder/portratt.webp" alt="portratt">
+        </section>
+
+        <section id="third_section">
+            <div>
+                <h1>My projects</h1>
+            </div>
+            <div id="projekt">
+                <div>
+                    <h2>Grundläggende web</h2>
+                    <!-- bild på första hemsida -->
+                    <img src="bilder/web.webp" alt="projekt1" />
+
+                    <!-- text om första hemsida -->
+                    <p>
+                        Här kan du läsa om Tema 2 där jag lärde mig grundläggande metoder, program och tekniker som
+                        varit avgörande för de andra teman. Du hittar även den första uppgiften jag lämnade in.
+                    </p>
+                    <button class="read_more" onclick="window.location.href='web.html';">
+                        <span>
+                            <u> Read more</u>
+                        </span>
+                    </button>
+                </div>
+
+                <div>
+                    <h2>Grundläggende UX</h2>
+                    <!-- bild på första hemsida -->
+                    <img src="bilder/ux.webp" alt="projekt2" />
+                    <!-- text om egna hemsida -->
+                    <p>
+                        Läs här om Tema 3, där jag lärde mig mycket om hur man ger den optimala användarupplevelsen i
+                        utvecklingen av en prototyp. Du kan också hitta prototypen och hemsidan jag lämnade in.
+                    </p>
+                    <button class="read_more" onclick="window.location.href='ux.html';">
+                        <span>
+                            <u> Read more</u>
+                        </span>
+                    </button>
+                </div>
+
+                <div>
+                    <h2>Animation</h2>
+                    <!-- bild på spel -->
+                    <img src="bilder/spel.webp" alt="projekt3" />
+                    <!-- text om spel -->
+                    <p>
+                        Här kan du läsa om hur jag utvecklade mitt animerade spel under Tema 4. Du kan
+                        även läsa om min långa process med att utveckla spelet, både visuellt och interaktivt.
+                    </p>
+                    <button class="read_more" onclick="window.location.href='animation.html';">
+                        <span>
+                            <u> Read more</u>
+                        </span>
+                    </button>
+                </div>
+
+                <div>
+                    <h2>Grundläggende indhold</h2>
+                    <!-- bild på grupparbete -->
+                    <img src="bilder/indhold.webp" alt="projekt4" />
+                    <!-- text om grupparbete -->
+                    <p>
+                        Läs här om de två projekt jag lämnade in under Tema 5, som arbetades i grupper. Läs även hur vad
+                        min roll i grupparbetet var, och hur jag skapade en meny som är lättare att navigera på.
+                    </p>
+                    <button class="read_more" onclick="window.location.href='indhold.html';">
+                        <span>
+                            <u> Read more</u>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <img src="bilder/boxarefot.webp" alt="footer bild">
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
